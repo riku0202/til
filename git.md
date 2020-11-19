@@ -1,23 +1,21 @@
-# git   
-- バージョン管理システム   
-ファイルを作ったりある程度のまとまりになったら履歴データベースに保存する。 
-1. 作業ディレクトリ   
-2. ステージングエリア(インデックス)  
-3. リポジトリ (ローカル、リモート)
-git congig --help  マニュアル   
+# GITの使い方  
 
-* git init　このディレクトリを使うことを宣言   
-* git add ファイル名 作業ディレクトリからステージングエリアに上げる   
-* git commit -m コミットする   
-* git log --oneline　一行ずつ表示   
-* git log -p　どこを変更されたか見ることができる   
-* git log --stat　どのファイルが何か所変更されたか
-* git status　 今どういう状況か確認する   
-* git diff　変更箇所を教えてくれる  （作業ディレクトリ）
-* git diff　同上（ステージングエリア）  
-* git add .　今のディレクトリより下にあるファイルをaddする   
-* git mv or rm git上のディレクトリ、ファイルを消す   
-* .gitignore　無視するファイルの拡張子を設定することができる（下のファイルすべてに影響する）   
-* git commit --amend　直前のコミットを変更　コミットを増やさない   
-* git reset --hard  作業を戻す   
+### 新しく使うディレクトリ
+``` 
+git init    //ディレクトリを指定する
+git add README.md   //ファイルを指定する
+git commit -m "first commit"    //ローカルリポジトリに移す
+git branch -M main  //ブランチの設定
+git remote add origin git@github.com:riku0202/a.git /リモートレポジトリを指定
+git push -u origin main //  コミットしたファイルをプッシュする
+```
+### 既存のディレクトリ
+```
+git remote add origin git@github.com:riku0202/a.git     
+git branch -M main
+git push -u origin main
+```
+https://docs.github.com/ja/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent 
+1. 新しいSSHキーを生成してssh-agentに追加する
+2. Githubアカウントへの新しいSSHキーの追加   
 
