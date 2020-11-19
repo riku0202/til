@@ -27,7 +27,7 @@ git push -u origin main
   ssh-add ~/.ssh/id_rsa    
   ssh-add ~/.ssh/**id_ed25519**    //sshのプライベートキーを追加　太字の部分を秘密鍵のファイル名に置き換える
 ```
-###　Githubアカウントへの新しいSSHキーの追加
+### Githubアカウントへの新しいSSHキーの追加
 ```
   cat /home/riku0202/.ssh/id_ed25519.pub   //公開鍵を表示
  SSHキーをコピー　→　githubのsetting　→　[SSH and GPG keys] → 貼り付ける 
