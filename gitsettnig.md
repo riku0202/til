@@ -40,3 +40,18 @@ git push -u origin main
   touch .ignore     //ignoreファイルを作り一部のファイルを除外する
   git status
 ```
+
+### ubuntuにgolangを入れる方法  
+1. ```curl -O https://dl.google.com/go/go1.15.5.linux-amd64.tar.gz```   
+		- ubuntu上でこのコマンドを実行し、パッケージを取得する。   
+2. ```sudo tar -C /usr/local -xzf go1.15.5.linux-amd64.tar.gz```
+		- パッケージを展開して配置する。
+3. 一番上のディレクトリへ戻り、.profileを開きPATHを通す
+```
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
+```
+### golandの設定変更  
+1. Use GOPATH that`s defined in system enviromentのチェックを外す。 
+2. project GOPATHの＋を押し、```\\wsl$\Ubuntu-20.04\home\name\go```を指定する。
