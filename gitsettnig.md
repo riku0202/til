@@ -52,7 +52,8 @@ export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
 ```
-###gccを入れる
+### go mod tidy
+### gccを入れる
 apt update
 ### golandの設定変更  
 1. Use GOPATH that`s defined in system enviromentのチェックを外す。 
