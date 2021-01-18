@@ -40,7 +40,7 @@ git push -u origin main
   touch .ignore     //ignoreファイルを作り一部のファイルを除外する
   git status
 ```
-
+## clone したときにgo mod cashに関するエラーが出た場合modとsumを作り直してtidy
 ### ubuntuにgolangを入れる方法  
 1. ```curl -O https://dl.google.com/go/go1.15.5.linux-amd64.tar.gz```   
 		- ubuntu上でこのコマンドを実行し、パッケージを取得する。   
