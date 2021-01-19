@@ -15,6 +15,8 @@ git remote add origin git@github.com:riku0202/a.git
 git branch -M main
 git push -u origin main
 ```
+### コンフリクトした場合
+pullしてマーカー出た場所を修正していく
 [GithubDocs](https://docs.github.com/ja/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent )
 1. 新しいSSHキーを生成してssh-agentに追加する
 2. Githubアカウントへの新しいSSHキーの追加
